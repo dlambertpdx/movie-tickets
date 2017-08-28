@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="crossorigin="anonymous"></script>
+    <script src="js/scripts.js"></script>
+    <title>Movie Tickets</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="jumbotron">
+        <h1>Let's Go to a Movie!</h1>
+      </div>
+        <form>
+          <div class="form-group has-success">
+            <label for="movies">Select a movie:</label>
+            <select class="form-control" id="movies">
+              <option></option>
+              <option>The Shining</option>
+              <option>Blade Runner</option>
+              <option>The Good, The Bad and the Ugly</option>
+              <option>Westworld</option>
+              <option>Goonies</option>
+            </select>
+            </div>
+
+            <div class="form-group has-success">
+              <label for="time">Please select a time:</label>
+              <select class="form-control" id="time">
+                <option></option>
+                <option>9:00AM</option>
+                <option>11:30AM</option>
+                <option>2:30PM</option>
+                <option>7:30PM</option>
+              </select>
+            </div>
+
+
+           <div class="form-group has-success">
+              <label for="age">Select age group:</label>
+              <select class="form-control" id="age">
+                <option></option>
+                <option>General Admission (5+)</option>
+                <option>Senior (55+)</option>
+              </select>
+            </div>
+
+            <button type="submit" class="btn btn-success">Order Tickets</button>
+
+        </form>
+
+          <div id="output">
+            <h1>Ticket Confirmation</h1>
+            <h2><span id="cost"></span></h2>
+          </div>
+
+    </div>
+  </body>
+</html>
